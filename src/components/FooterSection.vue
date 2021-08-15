@@ -1,5 +1,5 @@
 <template>
-    <footer class="text-white">
+    <footer class="text-white" id="contact">
         <div class="footer-menu py-3">
             <div class="container">
                 <div class="row">

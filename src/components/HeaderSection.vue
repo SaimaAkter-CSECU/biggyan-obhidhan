@@ -18,7 +18,7 @@
           aria-label="Toggle navigation"
         >
             <!-- <span class="navbar-toggler-icon"></span> -->
-            <span class="material-icons-outlined">menu</span>
+            <span class="material-icons-outlined text-hover">menu</span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto mt-3">
@@ -38,7 +38,7 @@
                     <a class="nav-link" href="#">Instructors</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
