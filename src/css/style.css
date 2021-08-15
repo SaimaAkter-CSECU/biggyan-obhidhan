@@ -1,0 +1,223 @@
+*, p, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --dark-blue: #2b2a42;
+  --light-blue: #343351;
+  --section-title: #58468C;
+  --light-orange: #ff8a73;
+  --dark-ash: #938da6;
+  --light-cyan: #80bcff;
+  --light-primary: #6EC1E4;
+  --light-text: #7A7A7A;
+  --cyan: #e9f2ff;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: var(--light-orange);
+}
+
+::selection {
+  color: #fff;
+  background: var(--light-orange);
+}
+
+.section-title {
+  color: var(--section-title);
+  font-size: 2.8125rem;
+}
+
+.section-content .card {
+  border: transparent;
+  border-radius: 0.5rem;
+  transition: transform 500ms ease-in-out 25ms;
+  min-height: 20rem !important;
+}
+.section-content .card .card-title {
+  font-size: 1.375rem;
+  color: var(--section-title);
+}
+.section-content .card small.card-text {
+  font-size: 11px;
+  letter-spacing: 0.125em;
+  color: var(--dark-ash);
+}
+.section-content .card p.card-text {
+  font-size: 16px;
+  color: var(--dark-ash);
+}
+.section-content .card .card-icon {
+  color: var(--light-cyan);
+}
+.section-content .card:hover {
+  box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.35);
+  transform: translate3d(0, -20px, 0);
+}
+
+.text-hover:hover {
+  color: var(--light-orange);
+}
+
+/********* Header Start *****/
+nav {
+  transition: all 0.5s ease-in-out;
+}
+nav .navbar-brand img {
+  width: 17.5rem;
+}
+nav .nav-item .nav-link {
+  color: #019fb6 !important;
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding: 0;
+  transform-origin: 0% 50%;
+}
+nav .nav-item .nav-link:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #019fb6;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+nav .nav-item .nav-link:hover:after {
+  transform: scaleX(1);
+}
+
+nav.nav-shrink {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  margin-bottom: 0;
+  padding: 0;
+  border-bottom: 1px solid #edeff2;
+}
+nav.nav-shrink .navbar-brand {
+  width: 9.5rem;
+}
+
+.banner .banner-header {
+  color: var(--light-primary);
+  letter-spacing: 1.25px;
+}
+.banner .banner-text {
+  color: var(--light-text);
+  font-size: 1.5rem;
+}
+
+/********* Header End *****/
+/*** About Start ***/
+.watch-btn {
+  background: rgba(23, 23, 23, 0.8);
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  bottom: 5px;
+  left: 0;
+  height: 47px;
+  position: absolute;
+}
+
+/*** About End ***/
+/*** Services Start ***/
+#service {
+  background: var(--cyan);
+}
+#service .service-img img {
+  border-radius: 25px;
+  max-width: 70%;
+}
+#service .card-div .card-title {
+  color: var(--section-title);
+}
+#service .card-div .card-title span {
+  cursor: pointer;
+}
+#service .card-div .card-title span:hover {
+  color: var(--light-orange);
+}
+#service .card-div .card-text {
+  color: var(--light-text);
+}
+
+/*** Services End ***/
+/*** Facility Start ***/
+#facility {
+  background: #fff;
+  background-image: url("../assets/facilities/facility-bg.png");
+  background-size: cover;
+}
+#facility .card {
+  background-color: transparent;
+}
+#facility .card:hover {
+  background-color: #fff;
+}
+#facility .card img {
+  width: 64px;
+  height: 64px;
+}
+
+/*** Facility End ***/
+/*** Footer Start ***/
+.footer-menu {
+  background-color: var(--light-blue);
+}
+.footer-menu .social-icon {
+  width: 2.875rem;
+  height: 2.875rem;
+  font-size: 1.1rem;
+  background: #fff;
+  border-radius: 50%;
+  color: #24242B;
+  box-shadow: 0 10px 10px rgba(45, 45, 71, 0.8);
+}
+.footer-menu .social-icon i {
+  width: 100%;
+  height: 100%;
+}
+.footer-menu .material-icons-outlined {
+  font-size: 1.25rem;
+}
+
+.footer-credit {
+  background-color: var(--dark-blue);
+}
+
+.back-to-top {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  right: 40px;
+  bottom: 40px;
+  background-color: var(--light-orange);
+  border-radius: 0.25rem;
+  transition: transform 500ms ease-in-out 25ms;
+}
+.back-to-top:hover {
+  transform: translate3d(0, -10px, 0);
+  box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.23);
+}
+
+/*** Footer End ***/
+/*** Media Query **/
+@media only screen and (max-width: 680px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .navbar-brand img {
+    width: 9.5rem !important;
+  }
+}/*# sourceMappingURL=style.css.map */
